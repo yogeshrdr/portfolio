@@ -1,0 +1,80 @@
+.projectCard{
+    background-color: #112240;
+    min-width: 25vw;
+    max-width: 25vw;
+    min-height: 55vh;
+    min-height: 55vh;
+    color: white;
+    transition: transform 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 5vh;
+    margin: 2vh;
+}
+
+.projectCard:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+.projectCardIconDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5vh;
+    padding-bottom: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.projectCardFolderIcon{
+    color: #08FDD8;
+    font-size: 5vh;
+}
+
+.projectCardGitDiv{
+    font-size: 3vh;
+}
+
+.projectIcon{
+    color: #4A5977;
+    margin-left: 1vw;
+    transition: 0.3s;
+}
+
+.projectIcon:hover{
+    color: #08FDD8;
+    cursor: pointer;
+}
+
+.ProjectHeading{
+    color: #CBD5F5;
+    text-align: center;
+    font-size: 4.5vh;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.ProjectHeading:hover{
+    color: #08FDD8;
+}
+
+.Projecttitle{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left:1vw;
+    padding-right: 1vw;
+    color:#919DBB;
+    font-size: 2.2vh;
+}
+
+.ProjectTechUsed{
+    color: #7E89A7;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 1.5vh;
+}

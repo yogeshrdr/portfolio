@@ -1,0 +1,367 @@
+.MainPage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10vw;
+}
+
+.HomeMain{
+    min-height: 100vh;
+    background-color: #0A192F;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.HomeMainIntro{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+}
+
+.IntroHeader1{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vh;
+    font-weight:bold;
+    animation: moveInRight 3s;
+}
+
+.IntroHeader2{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12vh;
+    font-weight:bold;
+    animation: moveInRight 3s;
+}
+
+.IntroHeader3{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vh;
+    font-weight:bold;
+    animation: moveInRight 3s;
+}
+
+.ResumeButton{
+    background-color: transparent;
+    color: #64FFDA;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;
+    margin-top: 30px;
+    border: 2px solid #64FFDA;
+    border-radius: 5px;
+    padding: 1.5vh 3.5vw;
+    font-weight: 300;
+    animation: moveInRight 3s;
+}
+
+.ResumeButton:hover{
+    background-color: rgba(100, 255, 218, 0.1);
+    cursor: pointer;
+}
+
+.SideNav{
+    position: fixed;
+    min-height: 100vh;
+    max-height: 100vh;
+    min-width: 10vw;
+    max-width: 10vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #112240;
+    z-index: 100;
+}
+
+.SideNavContent{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    color: #fff;
+}
+
+.SideNavContentbar{
+    color: #fff;
+    border: 2px solid #0A192F;
+    font-size: 2.1vh;
+    padding: 1vh;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.SideNavContentbar:hover{
+    color: #64FFDA;
+}
+
+.SideNavIconBar{
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    font-size: 3vh;
+    margin-bottom : 10vh;
+}
+
+.SideNavIcon{
+    color: #fff;
+    cursor: pointer;   
+    transition: 0.3s;
+}
+
+.SideNavIcon:hover{
+    color: #64FFDA;
+}
+
+.SideNavIcon > a {text-decoration: none}
+
+.ScrollDownDiv{
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
+}
+
+.SideNavMain{
+    background-color: #1D2951;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+}
+
+.SideNavName{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 5vh;
+}
+
+.SideNavTitle{
+    color: #fff;
+    margin-top: 5px;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.ScrollDown{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.ScrollDownHeading{
+    font-size: 1.5vh;
+    writing-mode: vertical-lr;
+    animation: MoveUpDown 2s linear infinite;
+}
+
+
+.ScrollDownIcon{
+    font-size: 1vh;
+    margin-top: 2px;
+}
+
+.Sound{
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+.sound{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+}
+
+.soundButton{
+    position: fixed;
+    top: 50px;
+    background-color: #64FFDA;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: rgb(1, 14, 15);
+}
+
+.menubar{
+    position: fixed;
+    right: 0;
+    top: 10px;
+    width: 50px;
+}
+
+.noDecoration {
+    text-decoration: none;
+}
+
+
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3vh);
+    }
+}
+
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+.modal{
+    position: fixed;
+    background-color: black;
+    min-width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    color: white;
+}
+
+@media (max-width: 600px){
+    .MainPage{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0vw;
+    }
+    .HomeMain{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .HomeMainIntro{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .IntroHeader1{
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10vw;
+        font-weight:bold;
+        animation: moveInRight 3s;
+    }
+    
+    .IntroHeader2{
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15vw;
+        font-weight:bold;
+        animation: moveInRight 3s;
+    }
+    
+    .IntroHeader3{
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 8vw;
+        font-weight:bold;
+        animation: moveInRight 3s;
+    }
+    
+    .ResumeButton{
+        background-color: transparent;
+        color: #64FFDA;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 6vw;
+        margin-top: 30px;
+        border: 2px solid #64FFDA;
+        border-radius: 5px;
+        padding: 1.5vw 3.5vh;
+        font-weight: 300;
+        animation: moveInRight 3s;
+        transition: 3s;
+    }
+    
+    .ResumeButton:hover{
+        background-color: rgba(100, 255, 218, 0.1);
+        cursor: pointer;
+    }
+    
+    .SideNav{
+        min-height: 100vh;
+        min-width: 10vw;
+        max-width: 10vw;
+        background-color: #112240;
+        z-index: 100;
+    }
+    
+    .ScrollDownDiv{
+        display: none;
+        margin:10px;
+    }
+    
+    .ScrollDown{
+        color: #fff;
+        display: none;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .ScrollDownHeading{
+        display: none;
+    }
+    
+    
+
+    .ScrollDownIcon{
+        margin-top: 2px;
+    }
+    
+    .Sound{
+        position: absolute;
+        bottom: 0.5rem;
+        right: 0.5rem;
+    }
+    
+    .sound{
+        position: absolute;
+        right: 0;
+        top: 100px;
+        width: 50px;
+    }
+    
+    .soundButton{
+        position: fixed;
+        top: 50px;
+        background-color: #64FFDA;
+        padding: 5px;
+        font-size: 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        color: rgb(1, 14, 15);
+    }
+}

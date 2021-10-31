@@ -1,0 +1,78 @@
+.About{
+    min-height: 100vh;
+    background-color: #0A192F;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.AboutDiv{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.AboutHeading{
+    font-size: 10vh;
+    font-weight: bold;
+    color: #08FDD8;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.AboutParagrahDiv{
+    display:  inline-flex;
+    justify-content: space-around;
+    color: #fff;
+    margin-top: 30px;
+    display: flex;
+}
+
+.AboutParagrah{
+    margin-top: 2vh;
+    font-size: 2.3vh;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 350;
+    margin-right: 20px;
+}
+
+.AboutImage{
+    background-color: #112240;
+    position: absolute;
+    height: 30vh;
+    width: 15vw;
+}
+
+.AboutImageDiv{
+    border: 10px solid #08FDD8;
+    outline-offset: 15px;
+    margin-left: 1.5vw;
+    margin-top: 2vh;
+    height: 30vh;
+    width: 15vw;
+    z-index: -100;
+}
+
+
+.AboutmoreTech{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.AboutmoreTechitem{
+    display: flex;
+    align-items: center;
+    color: #08FDD8;
+    font-size: 2vh;
+}
+
+.AboutmoreTechfelx{
+    margin-top: 5px;
+    display: column;
+    justify-content: space-between;
+}
+
